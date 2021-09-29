@@ -7,9 +7,52 @@
     <title>figuras geometricas en javascript</title>
 </head>
 <body>
-    <h1>
-        figuras geometricas
-    </h1>
+    <header>
+        <h1>
+            figuras geometricas
+        </h1>
+        <p>Esta es una calculadora basica para figuras geometricas</p>
+    </header>
+    <main>
+        <section>
+            <h2>
+                Calcula el area y perimetro de un cuadrado.
+            </h2>
+            <form>
+                <label for="inputCuadrado">
+                    Por favor, escribe cuanto mide un lado de tu cuadrado.
+                </label>
+                    <input id="inputCuadrado" type="number">
+                    <button type="button" onclick="calcularPerimetroCuadrado()">
+                    Perimetro
+                    </button>
+                    <button type="button" onclick="calcularAreaCuadrado()">
+                    Area
+                    </button>
+            </form>
+        </section> 
+        <hr>
+        <section>
+            <h2>
+                Calcular area y perimetro de un circulo.
+            </h2>
+            <form>
+                <label>
+                    Por favor, escribe el radio del circulo.
+                </label for="inputCirculo">
+                <input id="inputCirculo" type="number">
+                    <button type="button" onclick="calcularPerimetroCirculo()">
+                        perimetro
+                    </button>
+                    <button type="button" onclick="calcularAreaCirculo()">
+                        Area
+                    </button>
+            </form>
+        </section>
+       
+    </main>
+    <footer></footer>
+    
     <script src="./figuras.js"></script>
 </body>
 </html>

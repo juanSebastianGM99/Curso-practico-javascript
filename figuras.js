@@ -21,25 +21,56 @@ function areaTriangulo(base, altura) {
 }
 console.groupEnd();
 
-//codigo circulo
+//CODIGO CIRCULO
 console.group("Circulos");
 
-//Diametro
 function diametroCirculo(radio) {
   return radio * 2;
 }
 
-// PI
 const pi = Math.PI;
 console.log("El valor asignado de pi es: " + pi);
 
-// Circunferencia
 function perimetroCirculo(radio) {
   const diametro = diametroCirculo(radio);
   return diametro * pi;
 }
-//Area
+
 function areaCirculo(radio) {
   return pi * (radio * radio);
 }
 console.groupEnd();
+
+// aqui vinculamos con HTML
+
+//cuadrado
+function calcularPerimetroCuadrado() {
+  const input = document.getElementById("inputCuadrado");
+  const value = input.value;
+
+  const perimetro = perimetroCuadrado(value);
+  alert(perimetro);
+}
+function calcularAreaCuadrado() {
+  const input = document.getElementById("inputCuadrado");
+  const value = input.value;
+
+  const area = areaCuadrado(value);
+  alert(area);
+}
+
+//circulo
+function calcularPerimetroCirculo() {
+  const input = document.getElementById("inputCuadrado");
+  const value = input.value;
+
+  const perimetro = perimetroCirculo(value);
+  alert(perimetro);
+}
+function calcularAreaCirculo() {
+  const input = document.getElementById("inputCuadrado");
+  const value = input.value;
+
+  const area = areaCirculo(value);
+  alert(area);
+}
