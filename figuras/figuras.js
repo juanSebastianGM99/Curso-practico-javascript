@@ -13,6 +13,13 @@ console.groupEnd();
 //codigo triangulo
 console.group("Triangulos");
 
+/* function alturaTriangulo(ladoA, ladoB, base) {
+  if (ladoA != ladoB) {
+    console.error("Los lados A y B no son iguales");
+  } else {
+  }
+} */
+
 function perimetroTriangulo(lado1, lado2, base) {
   return lado1 + lado2 + base;
 }
@@ -61,16 +68,18 @@ function calcularAreaCuadrado() {
 
 //circulo
 function calcularPerimetroCirculo() {
-  const input = document.getElementById("inputCuadrado");
+  const input = document.getElementById("inputCirculo");
   const value = input.value;
 
   const perimetro = perimetroCirculo(value);
   alert(perimetro);
 }
 function calcularAreaCirculo() {
-  const input = document.getElementById("inputCuadrado");
+  const input = document.getElementById("inputCirculo");
   const value = input.value;
 
   const area = areaCirculo(value);
   alert(area);
 }
+
+//triangulo

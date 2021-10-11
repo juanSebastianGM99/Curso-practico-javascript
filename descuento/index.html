@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                porcentajes y descuentos
+            </h1>
+            <p>
+                esta calculadora te servira para calcular el precio final de un articulo con descuento.
+            </p>
+        </div>
+    </header>
+    <section>
+        <main class="main-container">
+            <form action="">
+                <h2>Aqui va en nombre del Producto</h2><br><br>
+                <img src="./img/ISSCCHELLRC1BCR.jpg" alt="guitarra"><br><br>
+                <p>Por favor, ingrese los campos requeridos</p>
+                <label for="valuePrice">Precio Articulo</label><br>
+                    <input id="valuePrice" class="input" type="number" placeholder="Valor articulo"><br>
+                <label for="valueCupon">Cupon de Descuento</label><br>
+                    <input id="valueCupon" class="input" type="text" placeholder="Escriba el cupon"><br>
+                <button type="button" onclick="clickDescount()">Calcular</button><br>
+                <p id="price"></p>
+            </form>
+        </main>
+ </section>
+
+            
+    <footer>
+        <div class="footer">
+                <p>Gracias por ver mis primeros pasos en la programación 💛</p><br>
+                <a href="https://github.com/juanSebastianGM99?tab=repositories">Si deseas ver más, sigueme!</a>
+ 
+        </div>
+    </footer>
+    <script src="./descuentos.js"></script>
+</body>
+</html>
